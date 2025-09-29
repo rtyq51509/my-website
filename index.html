@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Home - COE</title>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+<div class="logo">
+<!--Logo path -->
+<img src="media/logo.png" style="width: 110px; height: auto;" alt="Logo" />
+</div>
+
+<nav class="nav">
+<a href="#" class="nav-link">Home</a>
+<a href="#updates" class="nav-link">Updates</a>
+<a href="#help" class="nav-link">Help</a>
+</nav>
+
+<div class="toggle-container">
+<button id="theme-toggle" aria-pressed="false" class="toggle-btn">🌙</button>
+</div>
+</header>
+
+<!-- Main content -->
+<main class="container">
+<!-- Hero section -->
+<section class="hero">
+<h1 class="hero-title">welcome to coe</h1>
+
+<div class="hero-buttons">
+<a href="#updates" class="btn primary">See Updates</a>
+<a href="#login" class="btn primary">Login</a>
+</div>
+
+<p class="lead">
+Your hub for campus highlights, events, and the latest announcements - build with clean, beginner friendly HTML &amp; CSS.
+</p>
+
+<img src="media/photo.jpg" style="width: 1300px; height: auto;" alt="photo of software" />
+
+<p class="sublead">Accessible, responsive design with semantic HTML.</p>
+</section>
+
+<!-- Highlights -->
+<section class="highlights">
+<h2>highlights</h2>
+
+<div class="cards">
+<article class="card">
+<h3 class="card-title">Events</h3>
+<ul class="card-list">
+<li>Weekly tech talks</li>
+<li>Student Hackathons</li>
+<li>Career Fairs</li>
+</ul>
+<a class="card-link" href="#events">View events</a>
+</article>
+
+<article class="card">
+<h3 class="card-title">Clubs</h3>
+<ul class="card-list">
+<li>AI &amp; Robotics</li>
+<li>Web Dev Circle</li>
+<li>Design Guild</li>
+</ul>
+<a class="card-link" href="#clubs">Explore clubs</a>
+</article>
+
+<article class="card">
+<h3 class="card-title">Facilities</h3>
+<ul class="card-list">
+<li>Library: Quiet &amp; group study zones</li>
+<li>Labs: Modern hardware &amp; software</li>
+<li>Cafe: Healthy snacks &amp; coffee</li>
+</ul>
+<a class="card-link" href="#facilities">See facilities</a>
+</article>
+</div>
+</section>
+
+<!-- Starter -->
+<section class="starter">
+<h2>Get the starter template</h2>
+<p class="lead">
+Download this project and start customizing. No hosting or database required - just open the index.html file.
+</p>
+
+<div class="starter-actions">
+<a class="btn primary dark-border" href="#browse">Browse Announcenemnts</a>
+<a class="btn secondary" href="#examples">See HTML/CSS Examples</a>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="contact-small">Contact us:</div>
+<div class="social-links">
+<a href="#wa">Whatsapp</a> |
+<a href="#ig">Instagram</a> |
+<a href="#tg">Telegram</a> |
+<a href="#tw">Twitter</a>
+</div>
+<div class="copyright">
+©2025 College Connect. Beginner friendly, professional UI. develop by Fatimah Hadi
+</div>
+</footer>
+
+<!-- JavaScript code to switch mode (only active button)-->
+<script>
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+toggleBtn.addEventListener('click', () => {
+body.classList.toggle('dark-mode');
+const dark = body.classList.contains('dark-mode');
+toggleBtn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+toggleBtn.textContent = dark ? '☀️' : '🌙';
+});
+</script>
+</body>
+</html>

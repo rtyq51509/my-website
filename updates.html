@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Updates - COE</title>
+<link rel="stylesheet" type="text/css" href="updates.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+<div class="header-left">
+<!-- logo path -->
+<img id="site-logo" src="media/logo.png" style="width: 110px; height: auto;" alt="logo" />
+</div>
+<!-- Navigation bar -->
+<div class="menu">
+<span>Home</span> 
+<span>Updates</span> 
+<span>Help</span> 
+</div>
+<!-- switch button -->
+<div class="toggle-container">
+<button id="theme-toggle">🌙</button>
+</div>
+</header>
+
+<!-- Content -->
+<main class="container">
+<h2>Find announcements, events, and campus highlights. Use search to filter posts.</h2>
+
+<!-- Search -->
+<div class="search-section">
+<label>Search announcements</label>
+<input type="text" placeholder="Search by title">
+<button class="btn-primary">Search</button>
+<button class="btn-clear">Clear</button>
+</div>
+
+<!-- Menu -->
+<div class="menu">
+<span>All</span> 
+<span>Events</span> 
+<span>Clubs</span> 
+<span>Facilities</span> 
+<span>News</span>
+</div>
+
+<!-- Posts -->
+<section class="posts">
+<h3>4 Posts found.</h3>
+<div class="post-grid">
+
+<div class="post-card">
+<h4>Orientation Week Kickoff</h4>
+<p class="meta">Sep 01, 2025. Events<br>Meet faculty, join tours, and grab your starter kit.</p>
+<button class="btn-read">Read more</button>
+</div>
+
+<div class="post-card">
+<h4>AI Lab Open Night</h4>
+<p class="meta">Sep 10, 2025. Clubs<br>Demos on computer vision and robotics; beginners welcome!</p>
+<button class="btn-read">Read more</button>
+</div>
+
+<div class="post-card">
+<h4>Extended Library Hours During Midterms</h4>
+<p class="meta">Oct 03, 2025. Facilities<br>Study spaces open till midnight with quiet and group zones.</p>
+<button class="btn-read">Read more</button>
+</div>
+
+<div class="post-card">
+<h4>College Website Refresh</h4>
+<p class="meta">Oct 20, 2025. News<br>We're modernizing navigation, accessibility, and mobile UX.</p>
+<button class="btn-read">Read more</button>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<p>@2025 College Connect. Beginner friendly, professional UI. develop by Fatimah Hadi</p>
+<a href="index.html">Back to Home</a>
+</footer>
+
+<script>
+const toggleBtn = document.getElementById("theme-toggle");
+const body = document.body;
+
+toggleBtn.addEventListener("click", () => {
+body.classList.toggle("dark-mode");
+toggleBtn.textContent = body.classList.contains("dark-mode") ? "☀️" : "🌙";
+});
+</script>
+</body>
+</html>

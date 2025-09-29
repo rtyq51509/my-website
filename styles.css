@@ -1,0 +1,161 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background: #ffffff; /* day-mode */
+color: #000000;
+}
+
+/* dark-mode */
+.dark-mode {
+background: #2b2b2b;
+color: #ffffff;
+}
+
+/* Header */
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 12px 24px;
+background: #f5f5f5;
+}
+
+/* logo */
+.logo-img {
+width: 110px;
+height: auto;
+}
+
+/* nav in center */
+.nav {
+display: flex;
+gap: 0px;
+}
+.nav-link {
+text-decoration: none;
+color: black;
+padding: 8px 15px;
+border: 1px solid black;
+}
+.nav-link:hover {
+background-color: #add8ff;
+}
+
+/* switch button in right*/
+.toggle-btn {
+background: transparent;
+border: 1px solid #000;
+border-radius: 6px;
+font-size: 15px;
+cursor: pointer;
+}
+
+/* Container */
+.container {
+max-width: 1300px;
+margin: 24px auto;
+padding: 0 16px;
+}
+
+/* Hero section */
+.hero {
+text-align: center;
+padding-bottom: 12px;
+}
+.hero-title {
+font-size: 34px;
+margin: 6px 0;
+}
+
+.hero-buttons {
+margin: 12px 0;
+display: flex;
+gap: 255px;
+justify-content: center;
+flex-wrap: wrap; 
+}
+
+.btn {
+display: inline-block;
+padding: 8px 12px;
+text-decoration: none;
+border-radius: 6px;
+font-weight: 600;
+}
+
+/* static blue buttons */
+.primary {
+background: #0b6ed1;
+color: #fff;
+border: none;
+}
+
+/* Secondary button with dark-mode */
+.secondary {
+background: #fff;
+color: #000;
+border: 2px solid #074f8f;
+}
+.dark-mode .secondary {
+background: #2b2b2b;
+color: #fff;
+border-color: #fff;
+}
+
+/* paragraphs */
+.lead, .sublead {
+max-width: 900px;
+margin: 12px 0;
+text-align: left;
+line-height: 1.5;
+}
+
+/* software image */
+.hero-image {
+display: block;
+width: 100%;
+max-width: 1300px;
+height: auto;
+margin: 12px 0;
+border-radius: 4px;
+}
+
+/* Highlights */
+.highlights { margin-top: 24px; text-align: left; }
+.highlights h2 { margin-bottom: 12px; }
+
+/* Cards */
+.cards {
+display: flex;
+gap: 16px;
+margin-bottom: 24px;
+flex-wrap: wrap; 
+}
+.card {
+flex: 1;
+background: #f2f6f9; /* light gray */
+border: 2px solid #1e73be; /* blue */
+padding: 12px;
+border-radius: 6px;
+min-height: 180px;
+}
+.card-title { text-align: center; color: black; } /* black */
+.card-list { list-style: none; padding: 0; margin: 8px 0; color: #000; }
+.card-link { display: block; text-align: center; color: #0b6ed1; text-decoration: underline; }
+
+/* Starter */
+.starter { margin-top: 20px; text-align: left; }
+.starter-actions { display:flex; gap:12px; margin-top:10px; flex-wrap: wrap; }
+
+/* Footer */
+.footer {
+background: #f5f5f5;
+text-align: center;
+padding: 16px;
+color:  #333333;
+ font-weight: 600;
+}
+.footer a {
+color: #0b6ed1;
+text-decoration: none;
+}
